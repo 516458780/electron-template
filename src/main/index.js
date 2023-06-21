@@ -2,6 +2,11 @@ import { app, shell, BrowserWindow } from 'electron'
 import { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
+import Config from './config'
+
+Config.getConfig().then((data) => {
+  console.log(`main===>`, data, typeof data)
+})
 
 function createWindow() {
   // Create the browser window.
