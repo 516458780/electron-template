@@ -1,0 +1,8 @@
+node_modules
+dist
+out
+*.log*
+.idea
+
+#Electron-builder output
+/dist_electron
